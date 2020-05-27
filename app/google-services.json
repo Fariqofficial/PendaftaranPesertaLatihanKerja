@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "134792548328",
+    "firebase_url": "https://pendaftaran-peserta-kerja-ppkd.firebaseio.com",
+    "project_id": "pendaftaran-peserta-kerja-ppkd",
+    "storage_bucket": "pendaftaran-peserta-kerja-ppkd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134792548328:android:475c2b21408f32fa765e5d",
+        "android_client_info": {
+          "package_name": "pradita.id.ac.pendaftaranpesertalatihankerja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134792548328-ic162p02fdkijvfh1eb3h2sv204g5ig7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pradita.id.ac.pendaftaranpesertalatihankerja",
+            "certificate_hash": "ea59d03a6fa8d171d9d86300f9da108f446602f8"
+          }
+        },
+        {
+          "client_id": "134792548328-1poncb9hevsmn7cdidcrm8sh89q69gtr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZzXF8sYnPefs6C-X4w0kMBuw_QTSfQpQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134792548328-1poncb9hevsmn7cdidcrm8sh89q69gtr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

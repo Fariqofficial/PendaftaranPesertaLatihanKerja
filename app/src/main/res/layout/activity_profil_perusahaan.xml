@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".ProfilPerusahaanActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:id="@+id/relativLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/backgroundClr"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:id="@+id/profil_blkd"
+                android:text="Profil Perusahaan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_below="@id/relativLayout"
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/backgroundClr" />
+
+        <LinearLayout
+            android:layout_below="@id/view"
+            android:id="@+id/LinearLayout"
+            android:clipToPadding="false"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/latar_belakang"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_cmpny"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/company"/>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/img_cmpny"
+                        android:id="@+id/txtlatarbelakang"
+                        android:layout_marginTop="15dp"
+                        android:text="Latar Belakang Perusahaan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/backgroundClr"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_right"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/LinearLayout"
+            android:id="@+id/LinearLayout1"
+            android:clipToPadding="false"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/visi_misi"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_vm"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/vm"/>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/img_vm"
+                        android:id="@+id/txtvm"
+                        android:layout_marginTop="15dp"
+                        android:text="Visi dan Misi Perusahaan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/backgroundClr"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_right"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/LinearLayout1"
+            android:id="@+id/LinearLayout2"
+            android:clipToPadding="false"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/struktur"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <RelativeLayout
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_struktur"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/struktur"/>
+
+                    <TextView
+                        android:textSize="20sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/img_struktur"
+                        android:id="@+id/txtstruktur"
+                        android:layout_marginTop="15dp"
+                        android:text="Struktur Organisasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/backgroundClr"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_right"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

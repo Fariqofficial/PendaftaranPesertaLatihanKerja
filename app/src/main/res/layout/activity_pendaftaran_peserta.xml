@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".PendaftaranPesertaActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:src="@drawable/photoprofil"
+                android:id="@+id/photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TableRow
+                android:id="@+id/tabel_kuota"
+                android:paddingTop="10dp"
+                android:layout_below="@id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="3dp"
+                    android:text="@string/kuota"/>
+
+                <TextView
+                    android:id="@+id/jumlah"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"
+                    android:paddingLeft="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:text="@string/jumlah"
+                    android:textColor="@android:color/holo_red_light"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tabel_kuota"
+                android:elevation="0dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linearlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linearlay"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <TableRow
+                            android:id="@+id/table_kejuruan"
+                            android:layout_marginBottom="5dp"
+                            android:paddingTop="10dp"
+                            android:layout_below="@id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textSize="14sp"
+                                android:paddingRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kejuruan Yang Diminati"
+                                android:textColor="@color/backgroundClr"/>
+
+                            <Spinner
+                                android:paddingLeft="5dp"
+                                android:id="@+id/spinner_kejuruan"
+                                android:paddingTop="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </Spinner>
+
+                        </TableRow>
+
+                        <RelativeLayout
+                            android:id="@+id/nik_relay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                fontPath="fonts/Poppins-Bold.otf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="8dp"
+                                android:text="NIK Peserta"
+                                android:textColor="@color/backgroundClr"
+                                android:textSize="14sp"
+                                tools:ignore="MissingPrefix" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/nik_relay"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/nik"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_namapeserta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nama Lengkap Peserta"
+                                android:textColor="@color/backgroundClr"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_namapeserta"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/nama_peserta"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="textPersonName"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_tempatLahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tempat Lahir"
+                                android:textColor="@color/backgroundClr"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_tempatLahir"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/tempat_lahir"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="text"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_tglLahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tanggal Lahir"
+                                android:textColor="@color/backgroundClr"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_tglLahir"
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/tgl_lahir"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="text"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_umur"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Umur Peserta"
+                                android:textColor="@color/backgroundClr"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_edtumur"
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_umur"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/umur_peserta"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <TableRow
+                            android:layout_marginBottom="5dp"
+                            android:paddingTop="10dp"
+                            android:layout_below="@id/relay_edtumur"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textSize="14sp"
+                                android:paddingRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="@string/pendidikan_terakhir"/>
+
+                            <Spinner
+                                android:paddingLeft="5dp"
+                                android:id="@+id/spinner_pendidikan"
+                                android:paddingTop="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </Spinner>
+
+                        </TableRow>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_jurusan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="Jurusan Sekolah (Contoh: IPA, IPS, dll)"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_jurusan"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/jurusan"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="text"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_tamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tahun Selesai / Angkatan"
+                                android:textColor="@color/backgroundClr"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_below="@id/relay_tamat"
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/selesai"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RadioGroup
+                            android:id="@+id/tabel_jenkel"
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textSize="14sp"
+                                android:paddingRight="15dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="@string/jenkel"/>
+
+                            <RadioButton
+                                android:id="@+id/pria"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingRight="4dp"
+                                android:text="Laki - laki"
+                                android:onClick="rbClick"
+                                android:checked="false"
+                                android:textColor="@android:color/holo_red_light" />
+
+                            <RadioButton
+                                android:id="@+id/cewek"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="#233283"
+                                android:onClick="rbClick"
+                                android:checked="false"
+                                android:text="Perempuan"/>
+
+                        </RadioGroup>
+
+                        <RadioGroup
+                            android:id="@+id/tabel_status"
+                            android:layout_marginBottom="5dp"
+                            android:paddingTop="10dp"
+                            android:layout_below="@id/tabel_jenkel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textSize="14sp"
+                                android:paddingRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="Status"/>
+
+                            <RadioButton
+                                android:paddingRight="4dp"
+                                android:id="@+id/menikah"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="@android:color/holo_red_light"
+                                android:onClick="rbClickStatus"
+                                android:checked="false"
+                                android:text="Menikah"/>
+
+                            <RadioButton
+                                android:id="@+id/belum"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textColor="#233283"
+                                android:onClick="rbClickStatus"
+                                android:checked="false"
+                                android:text="Belum Menikah"/>
+
+                        </RadioGroup>
+
+                        <TableRow
+                            android:id="@+id/tabel_agama"
+                            android:layout_marginBottom="5dp"
+                            android:paddingTop="10dp"
+                            android:layout_below="@id/tabel_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textSize="14sp"
+                                android:paddingRight="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="Agama"/>
+
+                            <Spinner
+                                android:id="@+id/agama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="15dp">
+
+                            </Spinner>
+
+                        </TableRow>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_alamatpsrt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="Alamat Peserta"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_alamatpsrt"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:id="@+id/alamat_peserta"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@null"
+                                android:inputType="textPostalAddress"
+                                android:paddingTop="5dp"
+                                android:textColorHint="@color/backgroundClr" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_kelurahan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="Kelurahan (*Sesuai KTP)"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_kelurahan"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:id="@+id/kelurahan"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@null"
+                                android:inputType="textPostalAddress"
+                                android:paddingTop="5dp"
+                                android:textColorHint="@color/backgroundClr" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_kecamatan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="Kecamatan (*Sesuai KTP)"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_kecamatan"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:id="@+id/kecamatan"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@null"
+                                android:inputType="textPostalAddress"
+                                android:paddingTop="5dp"
+                                android:textColorHint="@color/backgroundClr" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_kotaAdm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="Kota Administrasi (*Sesuai KTP)"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_kotaAdm"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:id="@+id/kotaAdministrasi"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="0dp"
+                                android:background="@null"
+                                android:inputType="textPostalAddress"
+                                android:paddingTop="5dp"
+                                android:textColorHint="@color/backgroundClr" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_emailpsrt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="Email Peserta"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_emailpsrt"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/email_peserta"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="textEmailAddress"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/relay_nomorhp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/backgroundClr"
+                                android:text="Nomor Handphone"
+                                android:textSize="14sp"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_below="@id/relay_nomorhp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/hp_peserta"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:inputType="number"
+                                android:background="@null"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TableRow
+                android:gravity="center"
+                android:layout_below="@id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <Button
+                    android:clickable="true"
+                    android:id="@+id/daftar_peserta"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_shape"
+                    android:drawableLeft="@drawable/daftar"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"
+                    android:text="Daftar"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+
+            </TableRow>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

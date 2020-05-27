@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".VisiDanMisiActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_visimisi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linLay_visimisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLay2_latabelakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linLay_visimisi"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_visimisi"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/blkd"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_below="@id/img_visimisi"
+                        android:id="@+id/txt_visimisi"
+                        android:textColor="@color/backgroundClr"
+                        android:textSize="22sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Visi PPKD Jakarta Pusat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/txt_visimisi"
+                        android:id="@+id/visi_ppkd"
+                        android:textColor="@color/backgroundClr"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/visi_ppkd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/visi_ppkd"
+                        android:id="@+id/txt_misi"
+                        android:textColor="@color/backgroundClr"
+                        android:textSize="22sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Misi PPKD Jakarta Pusat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <ImageView
+                        android:layout_below="@id/txt_misi"
+                        android:id="@+id/img_misi"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/img_syarat"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/img_misi"
+                        android:id="@+id/desc_misi"
+                        android:textColor="@color/backgroundClr"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_misippkd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/desc_misi"
+                        android:id="@+id/desc_misi1"
+                        android:textColor="@color/backgroundClr"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_misippkd1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/desc_misi1"
+                        android:id="@+id/desc_misi2"
+                        android:textColor="@color/backgroundClr"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_misippkd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/desc_misi2"
+                        android:id="@+id/desc_misi3"
+                        android:textColor="@color/backgroundClr"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_misippkd3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

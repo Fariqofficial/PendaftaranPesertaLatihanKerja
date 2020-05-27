@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".LatarBelakangPerusahaanActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_latabelakang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linLay_latabelakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLay2_latabelakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linLay_latabelakang"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_latabelakang"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/bg_content"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_below="@id/img_latabelakang"
+                        android:id="@+id/txt_latabelakang"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Latar Belakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_below="@id/txt_latabelakang"
+                        android:id="@+id/desc_latabelakang"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_latarbelakang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_below="@id/desc_latabelakang"
+                        android:id="@+id/desc_latabelakang1"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_latarbelakang2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_below="@id/desc_latabelakang1"
+                        android:id="@+id/desc_latabelakang2"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_latarbelakang3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="6dp"
+                        android:layout_below="@id/desc_latabelakang2"
+                        android:id="@+id/desc_latabelakang3"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Peraturan Gubernur Provinsi DKI Jakarta Nomor 33 Tahun 2015 ini kemudian diperbaharui lagi dengan dikeluarkan Peraturan Gubernur Nomor 341 Tahun 2016 yang dipakai hingga saat ini."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TableRow
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:layout_below="@id/cv_latabelakang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_marginRight="8dp"
+                    android:clickable="true"
+                    android:id="@+id/pergub_33"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/btn_shape"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"
+                    android:text="Lihat Pergub 33 Tahun 2015"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:clickable="true"
+                    android:id="@+id/pergub_341"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/btn_shape"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"
+                    android:text="Lihat Pergub 341 Tahun 2016"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+
+            </TableRow>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

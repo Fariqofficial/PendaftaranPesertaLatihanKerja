@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pradita.id.ac.pendaftaranpesertalatihankerja">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PenjadwalTataBusanaActivity"></activity>
+        <activity android:name=".PenjadwalanOperatorKomputerActivity" />
+        <activity android:name=".ListPesertaBahasaInggrisActivity" />
+        <activity android:name=".ListPesertaPerhotelanActivity" />
+        <activity android:name=".ListPesertaTeknikPendinginActivity" />
+        <activity android:name=".ListPesertaTeknikMotorActivity" />
+        <activity android:name=".ListPesertaTeknikKomputerActivity" />
+        <activity android:name=".ListPesertaTataBogaActivity" />
+        <activity android:name=".PenjadwalanBahasaInggrisActivity" />
+        <activity android:name=".PenjadwalanPerhotelanActivity" />
+        <activity android:name=".PenjadwalanTeknikPendinginActivity" />
+        <activity android:name=".PenjadwalanTeknikMotorActivity" />
+        <activity android:name=".PenjadwalanTeknikKomputerActivity" />
+        <activity android:name=".PenjadwalanTataBogaActivity" />
+        <activity android:name=".PergubNo33Activity" />
+        <activity android:name=".PergubNo341Activity" />
+        <activity android:name=".LulusanActivity" />
+        <activity android:name=".ListPesertaActivity" />
+        <activity android:name=".DataDiriActivity" />
+        <activity android:name=".PartnershipActivity" />
+        <activity android:name=".LengkapiProfilActivity" />
+        <activity android:name=".LupaPasswordActivity" />
+        <activity android:name=".UbahPasswordActivity" />
+        <activity android:name=".PendaftaranPesertaActivity" />
+        <activity android:name=".PersyaratanActivity" />
+        <activity android:name=".ProfilActivity" />
+        <activity android:name=".OperatorKomputerActivity" />
+        <activity android:name=".PenjadwalanActivity" />
+        <activity android:name=".PemasaranActivity" />
+        <activity android:name=".BahasaInggrisActivity" />
+        <activity android:name=".TeknikMotorActivity" />
+        <activity android:name=".TeknikPendinginActivity" />
+        <activity android:name=".TeknikKomputerActivity" />
+        <activity android:name=".PerhotelanActivity" />
+        <activity android:name=".TataBusanaActivity" />
+        <activity android:name=".TataBogaActivity" />
+        <activity android:name=".StrukturOrganisasiActivity" />
+        <activity android:name=".VisiDanMisiActivity" />
+        <activity android:name=".LatarBelakangPerusahaanActivity" />
+        <activity android:name=".ProfilPerusahaanActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".KejuruanActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="pradita.id.ac.pendaftaranpesertalatihankerja.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

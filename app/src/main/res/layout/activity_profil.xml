@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".ProfilActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photoProfil"
+                android:layout_width="250dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:elevation="9dp"
+                android:src="@drawable/photoprofil"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="63dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linearlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linearlay"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="24dp"
+                            android:textColor="@color/backgroundClr"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"
+                            android:text="Edit Profil"
+                            android:textAlignment="center"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="35dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nama Lengkap"
+                                android:textSize="14sp"
+                                android:textColor="@color/backgroundClr"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_person"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="8dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/relay_namapeserta"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/edit_nama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@null"
+                                android:inputType="textPersonName"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="35dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email"
+                                android:textSize="14sp"
+                                android:textColor="@color/backgroundClr"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_email"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="8dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/relay_edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/edit_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="textEmailAddress"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="8dp"
+                                android:layout_marginLeft="35dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nomor Handphone"
+                                android:textSize="14sp"
+                                android:textColor="@color/backgroundClr"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_phone"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="8dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/relay_edt_nomor"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/edit_nomor"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="number|phone"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="35dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Alamat"
+                                android:textSize="14sp"
+                                android:textColor="@color/backgroundClr"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_my_location"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="8dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/relay_edt_alamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/edit_alamat"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="text"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RT"
+                                android:textSize="14sp"
+                                android:textColor="@color/backgroundClr"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/relay_rt"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/edit_rt"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RW"
+                                android:textSize="14sp"
+                                android:textColor="@color/backgroundClr"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/relay_rw"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/edit_rw"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="number"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kelurahan"
+                                android:textSize="14sp"
+                                android:textColor="@color/backgroundClr"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/relay_kelurahan"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/edit_kelurahan"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="text"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kecamatan"
+                                android:textSize="14sp"
+                                android:textColor="@color/backgroundClr"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/relay_kecamatan"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/edit_kecamatan"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="text"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kota Administrasi"
+                                android:textSize="14sp"
+                                android:textColor="@color/backgroundClr"
+                                fontPath="fonts/Poppins-Bold.otf"
+                                tools:ignore="MissingPrefix"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="4dp"
+                            android:id="@+id/relay_kota"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_shape">
+
+                            <EditText
+                                android:textColorHint="@color/backgroundClr"
+                                android:layout_marginLeft="4dp"
+                                android:paddingTop="5dp"
+                                android:id="@+id/edit_kota"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@null"
+                                android:inputType="text"
+                                android:layout_centerVertical="true"/>
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/ubahpassword"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ubah Password"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/holo_red_light"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TableRow
+                android:gravity="center"
+                android:layout_below="@id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:clickable="true"
+                    android:id="@+id/save"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/btn_shape"
+                    android:drawableLeft="@drawable/ic_save"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"
+                    android:text="Simpan"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+
+            </TableRow>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".PenjadwalanActivity">
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt_penjadwalan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jadwal_latihan"
+            android:gravity="center"
+            android:textSize="20sp"
+            fontPath="fonts/Poppins-Bold.otf"
+            tools:ignore="MissingPrefix"
+            android:textColor="@color/backgroundClr"
+            android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:id="@+id/bg"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bg_content"/>
+
+
+            <RelativeLayout
+                android:layout_below="@id/bg"
+                android:id="@+id/relay_jadwalbing"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/backgroundClr"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Bahasa Inggris"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"/>
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_jadwalbing"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relay_jadwalbing"
+                android:layout_marginLeft="4dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_below="@id/rv_jadwalbing"
+                android:id="@+id/relay_jadwaltatabusana"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/backgroundClr"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tata Busana"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_jadwaltatabusana"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relay_jadwaltatabusana"
+                android:layout_marginLeft="4dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:layout_below="@id/rv_jadwaltatabusana"
+                android:id="@+id/relay_jadwaltataboga"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/backgroundClr"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:textSize="20sp"
+                    android:layout_marginTop="8dp"
+                    android:text="Tata Boga"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_jadwaltataboga"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relay_jadwaltataboga"
+                android:layout_marginLeft="4dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

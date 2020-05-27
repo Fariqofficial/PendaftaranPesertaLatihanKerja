@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".KejuruanActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tatabusana"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:src="@drawable/tatabusana"/>
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#20000000">
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="T a t a  B u s a n a"
+                        android:textSize="30sp"
+                        android:textColor="@android:color/white"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tataboga"
+                android:layout_below="@id/tatabusana"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:src="@drawable/tataboga"/>
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#20000000">
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="T a t a  B o g a"
+                        android:textSize="30sp"
+                        android:textColor="@android:color/white"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/perhotelan"
+                android:layout_below="@id/tataboga"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:src="@drawable/perhotelan"/>
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#20000000">
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="P e r h o t e l a n"
+                        android:textSize="30sp"
+                        android:textColor="@android:color/white"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sepedamtr"
+                android:layout_below="@id/perhotelan"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:src="@drawable/motor"/>
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#20000000">
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Teknik Sepeda Motor"
+                        android:textSize="30sp"
+                        android:textColor="@android:color/white"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pendingin"
+                android:layout_below="@id/sepedamtr"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:src="@drawable/pendingin"/>
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#20000000">
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="T e k n i k P e n d i n g i n"
+                        android:textSize="30sp"
+                        android:textColor="@android:color/white"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tek_komp"
+                android:layout_below="@id/pendingin"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:src="@drawable/teknikkomp"/>
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#20000000">
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="T e k n i k K o m p u t e r"
+                        android:textSize="30sp"
+                        android:textColor="@android:color/white"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/op_komp"
+                android:layout_below="@id/tek_komp"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:src="@drawable/komputer"/>
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#20000000">
+
+                    <TextView
+                        android:layout_marginTop="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="O p e r a t o r K o m p u t e r"
+                        android:textSize="30sp"
+                        android:textColor="@android:color/white"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/b_ing"
+                android:layout_below="@id/op_komp"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:clickable="true"
+                android:elevation="0dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:src="@drawable/bg_content"/>
+
+                <FrameLayout
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#20000000">
+
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="B a h a s a I n g g r i s"
+                        android:textSize="30sp"
+                        android:textColor="@android:color/white"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

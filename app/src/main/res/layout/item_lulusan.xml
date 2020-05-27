@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayoutAlumni">
+
+        <TextView
+            android:id="@+id/namaAlumni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Nama Peserta"
+            android:textStyle="bold"
+            android:layout_marginLeft="4dp"
+            android:maxLines="2"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/angkatanLulusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Angkatan"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/lulusanJurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="3"
+            android:text="Kejuruan"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="4dp"
+            android:textColor="@android:color/black"/>
+
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/namaPt"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="4dp"
+                android:text="Nama PT"/>
+
+            <TextView
+                android:id="@+id/jenisPt"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:text="Jenis PT"
+                android:layout_marginLeft="250dp"
+                android:textColor="@android:color/black"/>
+        </TableRow>
+
+    </LinearLayout>
+
+</RelativeLayout>

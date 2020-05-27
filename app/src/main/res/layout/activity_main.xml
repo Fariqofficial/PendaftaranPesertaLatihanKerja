@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:paddingTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="9dp"
+            android:src="@drawable/logo"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="63dp"
+            android:elevation="0dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlay"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <EditText
+                        android:paddingBottom="20dp"
+                        android:textColorHint="@color/backgroundClr"
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Email"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/ic_email"
+                        android:drawablePadding="@dimen/activity_vertical_margin"/>
+
+
+
+                    <EditText
+                        android:paddingBottom="20dp"
+                        android:textColorHint="@color/backgroundClr"
+                        android:id="@+id/password"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/pass"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:drawablePadding="@dimen/activity_horizontal_margin"/>
+
+                    <TextView
+                        android:id="@+id/lupapass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"
+                        android:text="@string/lupa_pass"
+                        android:textColor="@color/backgroundClr"
+                        android:textSize="16sp"/>
+
+                    <Button
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:id="@+id/masuk"
+                        android:layout_width="210dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:background="@drawable/btn_shape"
+                        android:drawableLeft="@drawable/ic_touch"
+                        android:paddingLeft="@dimen/activity_horizontal_margin"
+                        android:paddingRight="@dimen/activity_horizontal_margin"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"
+                        android:text="@string/masuk"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TableRow
+            android:layout_below="@id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginRight="3dp"
+                android:text="@string/belumpunya"/>
+            <TextView
+                android:id="@+id/daftar"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:paddingLeft="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:text="@string/register"
+                android:textColor="@color/backgroundClr"
+                android:textStyle="bold"/>
+        </TableRow>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".StrukturOrganisasiActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_struktur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linLay_struktur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLay2_struktur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linLay_struktur"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginBottom="8dp"
+                        android:textStyle="bold"
+                        android:id="@+id/txt_struktur"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:gravity="center"
+                        android:text="Struktur Organisasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <ImageView
+                        android:layout_marginBottom="8dp"
+                        android:layout_below="@id/txt_struktur"
+                        android:id="@+id/img_struktur"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/strukturorg"/>
+
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/img_struktur"
+                        android:id="@+id/desc_struktur"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_struktur"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/desc_struktur"
+                        android:id="@+id/desc_struktur1"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_struktur1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/desc_struktur1"
+                        android:id="@+id/desc_struktur2"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_struktur2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/desc_struktur2"
+                        android:id="@+id/desc_struktur3"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_struktur3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/desc_struktur3"
+                        android:id="@+id/desc_struktur4"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_struktur4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="4dp"
+                        android:layout_below="@id/desc_struktur4"
+                        android:id="@+id/desc_struktur5"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/desc_struktur5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

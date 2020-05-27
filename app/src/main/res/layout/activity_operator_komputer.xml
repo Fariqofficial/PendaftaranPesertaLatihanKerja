@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".OperatorKomputerActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_opkom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linLay_opkom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLay2_opkom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linLay_opkom"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_opkom"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/img_opkom"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_below="@id/img_opkom"
+                        android:id="@+id/txt_opkom"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/operator_komputer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TableRow
+                        android:id="@+id/tabel2"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@id/txt_opkom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:clickable="true"
+                            android:id="@+id/pendaftar_opkom"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="15sp"
+                            android:text="Lihat Pendaftar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/jadwal_opkom"
+                            android:layout_marginLeft="10dp"
+                            android:clickable="true"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="15sp"
+                            android:text="Jadwal Pelatihan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                    </TableRow>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@id/tabel2"
+                        android:id="@+id/desc_opkom"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="Tujuan Pelatihan"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@id/desc_opkom"
+                        android:id="@+id/desc_opkom1"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/peserta_operatorkom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@id/desc_opkom1"
+                        android:id="@+id/desc_opkom2"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="• Berintegrasi dengan teknologi yang dapat diterapkan di perusahaan dengan mudah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@id/desc_opkom2"
+                        android:id="@+id/desc_opkom3"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="•  Melaksanakan jenis-jenis pekerjaan yang dibutuhkan di perkantoran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@id/desc_opkom3"
+                        android:id="@+id/desc_opkom4"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="• Mengembangkan kemampuan diri secara mandiri untuk mengikuti perkembangan teknologi dan informasi yang semakin pesat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@id/desc_opkom4"
+                        android:id="@+id/desc_opkom5"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="• Mengetik dengan 10 jari dengan cepat, tepat dan efisien"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/desc_opkom5"
+                        android:id="@+id/pelajari_opkom"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/operatorkom_mempelajari"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@id/pelajari_opkom"
+                        android:id="@+id/tujuan_opkom"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="7dp"
+                        android:text="1. Microsoft Office (Microsoft Word, Microsoft Excel, Microsoft Power Point, Microsoft Access)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@id/tujuan_opkom"
+                        android:id="@+id/tujuan_opkom1"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:text="2. Design Grafis ( Photosop, Corel Draw)"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@id/tujuan_opkom1"
+                        android:id="@+id/tujuan_opkom2"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:text="3. Internet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TextView
+                        android:layout_marginLeft="8dp"
+                        android:layout_below="@id/tujuan_opkom2"
+                        android:id="@+id/tujuan_opkom3"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:text="4. HTML"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

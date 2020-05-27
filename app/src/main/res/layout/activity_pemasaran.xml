@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@color/bg_color"
+    tools:context=".PemasaranActivity">
+
+    <LinearLayout
+        android:id="@+id/Linearlayot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/partnership"
+            android:layout_width="170dp"
+            android:layout_height="215dp"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/partnership" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar Partnership"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:ignore="MissingPrefix" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lulusan"
+            android:layout_width="170dp"
+            android:layout_height="215dp"
+            android:layout_margin="4dp"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/lulusan" />
+
+                <TextView
+                    fontPath="fonts/Poppins-Bold.otf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar Alumni"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:ignore="MissingPrefix" />
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

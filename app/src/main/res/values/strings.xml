@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">Pendaftaran Peserta Latihan Kerja</string>
+    <string name="masuk">Masuk</string>
+    <string name="pass">Password</string>
+    <string name="lupa_pass">Lupa Password ?</string>
+    <string name="belumpunya">Belum Punya Akun?</string>
+    <string name="register">Daftar Disini!</string>
+    <string name="kuota">Sisa Kuota Yang Tersisa :</string>
+    <string name="jumlah">0</string>
+    <string name="pendidikan_terakhir">Pendidikan Terakhir</string>
+    <string name="jenkel">Jenis Kelamin</string>
+    <string name="msg_email">Masukkan email yang valid!</string>
+    <string name="msg_pswd">Password harus terdiri dari 8 karakter!</string>
+    <string name="profil">Profil Perusahaan</string>
+    <string name="jurusan">Daftar Jurusan</string>
+    <string name="pemasaran">Pemasaran</string>
+    <string name="jadwal">Jadwal</string>
+    <string name="daftar">Pendaftaran</string>
+    <string name="password">Password</string>
+    <string name="lihat_peserta">Lihat Pendaftar</string>
+    <string name="print">Print Data Diri</string>
+    <string name="log_out">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="desc_latarbelakang">Pusat Pelatihan Kerja Daerah (PPKD) Jakarta Pusat merupakan Unit Pelayanan Teknis (UPT) Dinas Tenaga Kerja dan Transmigrasi (Diknakertras) Provinsi DKI Jakarta.</string>
+    <string name="desc_latarbelakang2">Berdasarkan SK Gubernur Provinsi DKI Jakarta No. 160 Tahun 2002 tentang Pembentukan Organisasi dan Tata Kerja Unit Pelaksanaan Teknis di lingkungan Disnakertrans Provinsi DKI Jakarta disebut Balai Latihan Kerja Daerah (BLKD) Jakarta Pusat yang tugas utamanya adalah melaksanakan pelatihan di berbagai jurusan.</string>
+    <string name="desc_latarbelakang3">Kemudian dengan diberlakukannya Peraturan Gubernur Provinsi DKI Jakarta Nomor 33 Tahun 2015 nama Balai Latihan Kerja Daerah (BLKD) Jakarta Pusat berubah nama menjadi Pusat Pelatihan Kerja Daerah Jakarta Pusat yang disingkat dengan PPKD Jakarta Pusat.</string>
+    <string name="visi_ppkd">Terwujudnya PPKD sebagai Pusat Pelatihan Kerja yang berstandard Nasional dan berdaya saing dalam meningkatkan keterampilan dan kemampuan pencari kerja /masyarakat Kota Administrasi Jakarta Pusat pada khususnya dan Jakarta pada umumnya secara profesional.</string>
+    <string name="desc_misippkd">1. Meningkatkan daya saing masyarakat dalam bursa kerja</string>
+    <string name="desc_misippkd1">2. Memberikan kepuasan dan layanan kepada masyarakat yang bernilai tambah dan berkualitas dalam meningkatkan Sumber Daya Manusia (SDM)</string>
+    <string name="desc_misippkd2">3. Membantu Pemerintah Kota Administrasi Jakarta Pusat dalam informasi pelatihan dan pasar kerja</string>
+    <string name="desc_misippkd3">4. Melatih calon tenaga kerja agar memiliki keterampilan dan mampu bersaing di pasar kerja.</string>
+    <string name="desc_struktur">Struktur organisasi Pusat Pelatihan Kerja Daerah Jakarta Pusat yaitu :</string>
+    <string name="desc_struktur1">1. Kepala Pusat Pelatihan Kerja Daerah</string>
+    <string name="desc_struktur2">2. Sub Bagian Tata Usaha</string>
+    <string name="desc_struktur3">3. Satuan Pelaksana Pelatihan dan Uji Kompetensi</string>
+    <string name="desc_struktur4">4. Satuan Pelaksana Pengendalian dan Pemasaran</string>
+    <string name="desc_struktur5">5. Kelompok Jabatan Fungsional</string>
+    <string name="tataboga">Tata Boga</string>
+    <string name="desc_tabo">Dengan mengikuti pelatihan Tata Boga peserta dapat memiliki kemampuan membuat dan menyajikan aneka kuliner baik dari Indonesia, Asia maupun masakan Continental</string>
+    <string name="tataboga_mempelajari">Dalam jurusan Tata Boga peserta mempelajari</string>
+    <string name="tatabusana">Tata Busana</string>
+    <string name="desc_tabun">Dengan mengikuti pelatihan Tata Busana peserta dapat menjahit pakaian pria dan wanita lengkap dengan teknik mengukur, membuat desain dan membuat pola dengan memperhatikan estetika busana serta mampu menggunakan berbagai jenis mesin jahit berikut perawatannya</string>
+    <string name="tatabusana_mempelajari">Jurusan Tata Busana Mempelajari:</string>
+    <string name="perhotelan">Perhotelan</string>
+    <string name="desc_perhotelan">Dengan mengikuti pelatihan Tata Graha (Perhoteman) peserta dapat memiliki keterampilan yang memadai dalam memenuhi Sumber Daya Manusia (SDM) yang siap memenuhi kebutuhan lapangan kerja untuk bidang perhotelan</string>
+    <string name="perhotelan_mempelajari">Dalam jurusan Perhotelan peserta mempelajari</string>
+    <string name="Teknik_komp">Dengan Mengikuti Pelatihan Teknik Komputer Peserta dapat</string>
+    <string name="teknikkomp_mempelajari">Dalam jurusan Teknik Komputer peserta mempelajari</string>
+    <string name="teknik_pendingin">Teknik Pendingin</string>
+    <string name="teknikpendingin_mempelajari">Dalam jurusan Teknik Pendingin peserta mempelajari</string>
+    <string name="teknik_pendingin_dapat">Dengan mengikuti pelatihan Teknik pendingin peserta dapat</string>
+    <string name="tekniksepeda_motor">Teknik Sepeda Motor</string>
+    <string name="desc_tsm">Dengan mengikuti pelatihan Teknik Sepeda Motor peserta dapat Memiliki kemampuan merawat atau memperbaiki kerusakan sepeda motor baik mesin maupun sistem listriknya, Membuka peluang kerja di bidang otomotif sepeda motor / usaha bengkel, dan Mampu menganalisa kerusakan pada kendaraan bermotor</string>
+    <string name="tsm_mempelajari">Dalam jurusan Teknik Sepeda Motor peserta mempelajari</string>
+    <string name="des_bing">Kejuruan Bahasa Inggris merupakan salah satu kejuruan di Pusat Pelatihan Kerja Daerah Jakarta Pusat yang dapat menunjang minat peserta pelatihan yang ingin mengasah kemampuan nya dalam bidang Bahasa Inggris.</string>
+    <string name="jadwal_latihan">Jadwal Latihan Peserta Pelatihan Kerja</string>
+    <string name="operatorkom_mempelajari">Dalam jurusan Operator Komputer peserta mempelajari</string>
+    <string name="peserta_operatorkom">Dengan mengikuti pelatihan operator komputer peserta dapat :</string>
+    <string name="operator_komputer">Operator Komputer</string>
+    <string name="pendaftaran_peserta">Pendaftaran</string>
+    <string name="txt_jadwalLatihan">Jadwal Latihan</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="minat_jurusan">
+        <item>Tata Busana</item>
+        <item>Operator Komputer</item>
+        <item>Bahasa Inggris</item>
+        <item>Teknik Pendingin</item>
+        <item>Tata Boga</item>
+        <item>Teknik Sepeda Motor</item>
+        <item>Perhotelan</item>
+    </string-array>
+
+    <string-array name="pendidikan_terakhir">
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+        <item>SMK</item>
+        <item>D1</item>
+        <item>D2</item>
+        <item>D3</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+
+    <string-array name="kota_admn">
+        <item>Jakarta Pusat</item>
+        <item>Jakarta Utara</item>
+        <item>Jakarta Selatan</item>
+        <item>Jakarta Timur</item>
+        <item>Jakarta Barat</item>
+        <item>Kepulauan Seribu</item>
+    </string-array>
+
+    <string-array name="agama">
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Katholik</item>
+        <item>Konghucu</item>
+    </string-array>
+
+</resources>

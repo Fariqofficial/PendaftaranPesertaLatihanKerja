@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/bg_color"
+    tools:context=".DataDiriActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relay_daftar"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo_form"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:src="@drawable/logo_form"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/txtkop"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pemerintah Provinsi Daerah Khusus Ibukota Jakarta"
+                android:layout_marginBottom="5dp"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_below="@id/logo_form"/>
+
+            <TextView
+                android:id="@+id/txtkop1"
+                android:layout_below="@id/txtkop"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dinas Tenaga Kerja Dan Transmigrasi"
+                android:layout_marginBottom="5dp"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/txtkop2"
+                android:layout_below="@id/txtkop1"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pusat Pelatihan Kerja Daerah Jakarta Pusat"
+                android:layout_marginBottom="5dp"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"/>
+
+            <TextView
+                android:id="@+id/txtkop3"
+                android:layout_below="@id/txtkop2"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jalan Karet Pasar Baru Barat V No. 23 Kel Karet Tengsin Kec. Tanah Abang"
+                android:layout_marginBottom="5dp"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"/>
+
+            <TextView
+                android:id="@+id/txtkop4"
+                android:layout_below="@id/txtkop3"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telp. 021-57950913 / 021-2510495"
+                android:layout_marginBottom="5dp"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"/>
+
+            <TextView
+                android:id="@+id/txtkop5"
+                android:layout_below="@id/txtkop4"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jakarta"
+                android:textAllCaps="true"
+                android:layout_marginBottom="3dp"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"/>
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/txtkop6"
+                android:layout_below="@id/txtkop5"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Pos 10220"
+                android:layout_marginBottom="5dp"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginRight="4dp"/>
+
+            <View
+                android:layout_below="@id/txtkop6"
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/black"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/txt_form"
+                android:layout_below="@id/view"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Formulir Pendaftaran"
+                android:layout_marginBottom="8dp"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:textAllCaps="true"/>
+
+            <TextView
+                android:id="@+id/txt_kejuruan"
+                android:layout_below="@id/txt_form"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peminatan Kejuruan :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_kejuruan"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_kejuruan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_kejuruan"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_kejuruan"
+                    android:id="@+id/gariskejuruan"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_nik"
+                android:layout_below="@id/relay_kejuruan"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. NIK :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"
+                android:textAllCaps="true"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_nik"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_nik"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_nik"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_nik"
+                    android:id="@+id/garisnik"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_nama"
+                android:layout_below="@id/relay_nik"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Nama (Sesuai Ijazah) :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_nama"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_nama"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_nama"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_nama"
+                    android:id="@+id/garisnama"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_tempatlahir"
+                android:layout_below="@id/relay_nama"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Tempat Lahir :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_tempatlahir"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_tempatlahir"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_tempatLahir"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_tempatLahir"
+                    android:id="@+id/garistempatlahir"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_ttl"
+                android:layout_below="@id/relay_tempatlahir"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Tanggal Lahir :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_ttl"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_ttl"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_ttl"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_ttl"
+                    android:id="@+id/garisttl"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_umur"
+                android:layout_below="@id/relay_ttl"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. Umur :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_umur"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_umur"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_umur"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_umur"
+                    android:id="@+id/garisumur"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_pendidikan"
+                android:layout_below="@id/relay_umur"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Pendidikan Terakhir :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_pendidikan"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_pendidikan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_pendidikan"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_pendidikan"
+                    android:id="@+id/garispendidikan"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_jurusan"
+                android:layout_below="@id/relay_pendidikan"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. Jurusan Sekolah :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_jurusan"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_jurusan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_jurusan"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_jurusan"
+                    android:id="@+id/garisjurusan"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_tamat"
+                android:layout_below="@id/relay_jurusan"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Tahun Selesai :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_tamat"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_tamat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_tamat"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_tamat"
+                    android:id="@+id/garistamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_jenkel"
+                android:layout_below="@id/relay_tamat"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. Jenis Kelamin :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_jenkel"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_jenkel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_jenkel"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_jenkel"
+                    android:id="@+id/garisjenkel"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_perkawinan"
+                android:layout_below="@id/relay_jenkel"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Status Perkawinan :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_perkawinan"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_perkawinan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_perkawinan"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_perkawinan"
+                    android:id="@+id/garisperkawinan"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txt_agama"
+                android:layout_below="@id/relay_perkawinan"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11. Agama :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_agama"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_agama"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_agama"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_agama"
+                    android:id="@+id/garisagama"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_alamat"
+                android:layout_below="@id/relay_agama"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12. Alamat :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_alamat"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_alamat"
+                    android:id="@+id/garisalamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_below="@id/relay_alamat"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13. Email :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_email"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_email"
+                    android:id="@+id/garisemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_hp"
+                android:layout_below="@id/relay_email"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14. Nomor Handphone :"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <RelativeLayout
+                android:layout_below="@id/txt_hp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relay_nohp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/edt_hp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:layout_below="@id/edt_hp"
+                    android:id="@+id/garishp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@android:color/black"
+                    android:layout_marginBottom="5dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/persyaratan"
+                android:layout_below="@id/relay_nohp"
+                android:textSize="12sp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* Harap membawa semua persyaratan dibawah ini"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/persyaratan1"
+                android:layout_below="@id/persyaratan"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚫ Fotocopy KTP DKI"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/persyaratan2"
+                android:layout_below="@id/persyaratan1"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚫ Surat Ket. Domisili dari ketua RT/RW jika KTP luar jakarta"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/persyaratan3"
+                android:layout_below="@id/persyaratan2"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚫ Fotocopy ijazah terakhir (SD/SMP/SMA/D3/S1/Lainnya)"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/persyaratan4"
+                android:layout_below="@id/persyaratan3"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⚫ Pas foto berwarna merah ukuran 3x4 (4 Lembar)"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/day"
+                android:layout_below="@id/persyaratan4"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jakarta, ........."
+                android:layout_marginTop="15dp"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginRight="50dp"/>
+
+            <TextView
+                android:gravity="right"
+                android:id="@+id/peserta"
+                android:layout_below="@id/day"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peserta,"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="40dp"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginRight="50dp"/>
+
+            <EditText
+                android:layout_alignParentRight="true"
+                android:id="@+id/ttd"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/peserta"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/backgroundClr"
+        android:background="@color/backgroundClr"
+        android:src="@drawable/printer"
+        android:layout_margin="16dp"/>
+
+</RelativeLayout>

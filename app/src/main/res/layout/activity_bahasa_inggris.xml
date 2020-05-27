@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".BahasaInggrisActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_bing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="0dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linLay_bing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLay2_bing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linLay_bing"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_bing"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/blkd"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_below="@id/img_bing"
+                        android:id="@+id/txt_bing"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Bahasa Inggris"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                    <TableRow
+                        android:id="@+id/tabel8"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@id/txt_bing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginLeft="8dp"
+                            android:clickable="true"
+                            android:id="@+id/pendaftar_bing"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="15sp"
+                            android:text="Lihat Pendaftar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/jadwal_bing"
+                            android:layout_marginLeft="10dp"
+                            android:clickable="true"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="15sp"
+                            android:text="Jadwal Pelatihan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                    </TableRow>
+
+                    <TextView
+                        android:layout_below="@id/tabel8"
+                        android:id="@+id/desc_bing"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/des_bing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

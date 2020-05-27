@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".PersyaratanActivity">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_syarat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_marginTop="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linLay_syarat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLay_syarat2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linLay_syarat"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:id="@+id/blkd"
+                            android:scaleType="fitXY"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:src="@drawable/img_syarat"/>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_below="@id/blkd"
+                            android:id="@+id/txt_judul"
+                            android:textColor="@android:color/black"
+                            android:textSize="22sp"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="Syarat Pendaftaran"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/syarat"
+                            android:layout_below="@id/txt_judul"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="1. Usia Minimal 17 tahun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/syarat2"
+                            android:layout_below="@id/syarat"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="2. KTP dan Kartu Keluarga (KK) DKI Jakarta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/syarat3"
+                            android:layout_below="@id/syarat2"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="3. Memliki ijazah terakhir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <View
+                            android:layout_marginTop="8dp"
+                            android:layout_below="@id/syarat3"
+                            android:id="@+id/view"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#20000000"/>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/txt_berkas"
+                            android:layout_below="@id/view"
+                            android:textColor="@android:color/black"
+                            android:textSize="22sp"
+                            android:layout_marginTop="10dp"
+                            android:text="Siapkan berkas pendaftaran"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/berkas"
+                            android:layout_below="@id/txt_berkas"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="–  Fotokopi KTP (1 lembar)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/berkas1"
+                            android:layout_below="@id/berkas"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="–  Fotokopi KK (1 lembar)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/berkas2"
+                            android:layout_below="@id/berkas1"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="–  Pasfoto 3×4 latar belakang merah (3 lmbr)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/berkas3"
+                            android:layout_below="@id/berkas2"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="–  Fotokopi Ijazah Terakhir (1 lembar)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/berkas4"
+                            android:layout_below="@id/berkas3"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="–  Membawa Tanda Bukti (Print) Pendaftaran (1 lembar)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <View
+                            android:layout_marginTop="8dp"
+                            android:layout_below="@id/berkas4"
+                            android:id="@+id/view_syarat"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="#20000000"/>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/txt_tambahan"
+                            android:layout_below="@id/view_syarat"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="*Harap Diperhatikan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/txt_tambahan4"
+                            android:layout_below="@id/txt_tambahan"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="Pendaftaran dan pelaksanaan pelatihan tidak dipungut biaya sama sekali (GRATIS 100%)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/txt_tambahan1"
+                            android:layout_below="@id/txt_tambahan4"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="Seluruh berkas pendaftaran wajib di bawa saat pelaksanaan seleksi."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/txt_tambahan2"
+                            android:layout_below="@id/txt_tambahan1"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="Calon Peserta wajib ikut serta dalam kegiatan seleksi sesuai jadwal."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                        <TextView
+                            android:id="@+id/txt_tambahan3"
+                            android:layout_below="@id/txt_tambahan2"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="19sp"
+                            android:layout_marginTop="10dp"
+                            android:text="Untuk mengetahui jadwal kegiatan seleksi silahkan follow akun sosial media PPKD Jakarta Pusat."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            fontPath="fonts/Poppins-Bold.otf"
+                            tools:ignore="MissingPrefix"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TableRow
+                android:gravity="center"
+                android:layout_below="@id/cv_syarat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:clickable="true"
+                    android:id="@+id/next"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_shape"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"
+                    android:text="Saya Telah Membacanya Dan Menyetujuinya"
+                    android:textAlignment="center"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+
+            </TableRow>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
